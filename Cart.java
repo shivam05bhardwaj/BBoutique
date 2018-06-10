@@ -5,13 +5,27 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Cart extends AppCompatActivity {
     private Button home,profile,cart,favourite;
+//    public static final String PRICE="price";
+//    public static final String NAME="name";
+//
+//    private TextView mName,mPrice;
+//    private String getName;
+//    private int getPrice;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
+
+//        Intent intent= getIntent();
+//        getName=intent.getStringExtra(NAME);
+//        getPrice= intent.getIntExtra(PRICE,0);
+//
+//        mName=(TextView)findViewById(R.id.)
     }
 
     public void toHome(View view) {
