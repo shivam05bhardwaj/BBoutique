@@ -3,6 +3,7 @@ package com.example.shivam.bboutique;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -24,6 +25,7 @@ public class FacebookActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_facebook);
+        Log.d("dasda","OnCreate");
         FacebookSdk.getApplicationContext();
         callbackManager = CallbackManager.Factory.create();
         loginButton= (LoginButton) findViewById(R.id.login_button);
@@ -33,7 +35,7 @@ public class FacebookActivity extends AppCompatActivity {
             public void onSuccess(LoginResult loginResult) {
                 String username=loginResult.getAccessToken().getUserId();
                 Intent intent = new Intent(FacebookActivity.this, Home.class);
-                intent.putExtra("UserName", username);
+                intent.putExtra(Home.NAME2, username);
                 startActivity(intent);
             }
 
