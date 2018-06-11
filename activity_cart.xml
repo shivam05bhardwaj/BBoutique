@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Cart">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Items in Carts"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:columnCount="3">
+        <!--Row 1-->
+        <TextView
+            android:id="@+id/number1"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:text="SerialNo."
+            android:inputType="number"/>
+        <TextView
+            android:id="@+id/cartName1"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:inputType="text"/>
+        <TextView
+            android:id="@+id/cartPrice1"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:inputType="number"/>
+
+        <!--Row2 -->
+        <TextView
+            android:id="@+id/number2"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:text="1."
+            android:inputType="number"/>
+        <TextView
+            android:id="@+id/cartName2"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+        <TextView
+            android:id="@+id/cartPrice2"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+        <!--Row 3-->
+        <TextView
+            android:id="@+id/number3"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:text="2."
+            android:inputType="number"/>
+        <TextView
+            android:id="@+id/cartName3"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+        <TextView
+            android:id="@+id/cartPrice3"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="45sp"
+            android:text="Total:"
+            android:layout_gravity="right"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/submit"
+            android:layout_gravity="fill_horizontal"
+            android:text="Confirm the Order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <!--TabBar Buttons-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/CartHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:onClick="toHome"
+            tools:ignore="ButtonStyle" />
+        <Button
+            android:id="@+id/CartProf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:onClick="toProfile"
+            tools:ignore="ButtonStyle" />
+        <Button
+            android:id="@+id/CartFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Fav"
+            android:onClick="toFav"
+            tools:ignore="ButtonStyle" />
+        <Button
+            android:id="@+id/CAcart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cart"
+            android:onClick="toCart"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+</LinearLayout>

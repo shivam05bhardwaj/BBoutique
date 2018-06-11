@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">BBoutique</string>
+    <string name="facebook_app_id">204077746776048</string>
+    <string name="fb_login_protocol_scheme">fb204077746776048</string>
+    <string-array name="options">
+        <item>Saree</item>
+        <item>Suit</item>
+        <item>Tops</item>
+        <item>Tops</item>
+    </string-array>
+    <!--Buttons-->
+    <string name="home">Home</string>
+    <string name="Fav">Fav</string>
+    <string name="profile">Profile</string>
+    <string name="cart">Cart</string>
+    <string name="addToCart">Add To Cart</string>
+
+
+    <!--<TypesOfClothes>-->
+    <string name="sarees">Saree</string>
+    <string name="suits">Suits</string>
+    <string name="tops">Tops/Blouse</string>
+    <string name="baby">Baby Dress</string>
+    <string name="dress">Dress</string>
+    <string name="lehenga">Lehenga</string>
+
+    <!--Profile Entry-->
+    <string name="fName">FirstName</string>
+    <string name="lName">LastName</string>
+    <string name="address">Address Line 1</string>
+    <string name="state">State</string>
+    <string name="country">Country</string>
+    <string name="pinCode">PinCode</string>
+    <string name="contact">Contact No</string>
+
+
+</resources>

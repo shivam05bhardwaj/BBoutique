@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile"
+    android:padding="10dp"
+    android:weightSum="10">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Details"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+    <!--ET Name-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+            <EditText
+                android:id="@+id/ETFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textSize="25sp"
+                android:hint="@string/fName"/>
+            <EditText
+                android:id="@+id/ETLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textSize="25sp"
+               android:hint="@string/lName"/>
+        </LinearLayout>
+
+    <!--ET Address-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/ETaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/address"
+                android:textSize="25sp"
+                android:inputType="text"/>
+        </LinearLayout>
+
+    <!--ET State and Country-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+            <EditText
+                android:id="@+id/ETState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textSize="25sp"
+                android:hint="@string/state"/>
+
+            <EditText
+                android:id="@+id/ETCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textSize="25sp"
+                android:hint="@string/country"/>
+            <EditText
+                android:id="@+id/ETPinCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:hint="@string/pinCode"/>
+        </LinearLayout>
+
+
+    <!--ET Contact Number-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/ETContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:hint="@string/contact"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint=""/>
+        </LinearLayout>
+    <!--Submit Button-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/submit"
+                android:layout_gravity="fill_horizontal"
+                android:text="Submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="DetailsStored"/>
+        </LinearLayout>
+
+    <!--TabBar Buttons-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/Profhome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:onClick="profToHome"
+                tools:ignore="ButtonStyle" />
+            <Button
+                android:id="@+id/PrProf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile"
+                android:onClick="profToProf"
+                tools:ignore="ButtonStyle" />
+            <Button
+                android:id="@+id/ProfFav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Fav"
+                android:onClick="profToFav"
+                tools:ignore="ButtonStyle" />
+            <Button
+                android:id="@+id/ProfCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cart"
+                android:onClick="profToCart"
+                tools:ignore="ButtonStyle" />
+
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_height="match_parent"
+    tools:context=".Favourite">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/FAVHome"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:onClick="toHome"></Button>
+
+        <!--android:layout_gravity="fill_horizontal"/>-->
+        <Button
+            android:id="@+id/FavProf"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:onClick="toProfile" />
+        <Button
+            android:id="@+id/FAVfav"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Fav"
+            android:onClick="toFav"></Button>
+        <Button
+            android:id="@+id/FAVCart"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cart"
+            android:onClick="toCart"></Button>
+
+    </LinearLayout>
+</LinearLayout>
